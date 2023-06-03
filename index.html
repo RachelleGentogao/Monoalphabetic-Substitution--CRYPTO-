@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoalphabetic Substitution</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="main-body">
+        <div class="side-bar">
+            <button class="btn"><input type="file" id="file" accept=".txt"></button>
+            <div class="wrapper">
+                <input type="number" id="key" placeholder="Enter the key">
+                <button class="btn-btn" onclick="encryptFile()"><a id="download">Encrypt</a></button>
+                <button class="btn-btn" onclick="decryptFile()">Decrypt</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h2>Monoalphabetic Substitution</h2>                          
+            </div>
+            <div class="result">
+                <h3>Output</h3>
+                <textarea id="output" placeholder="The output will display here" readonly></textarea>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
